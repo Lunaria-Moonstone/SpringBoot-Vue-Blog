@@ -1,0 +1,30 @@
+1688967889050|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|select * from user|select * from user
+1688968484550|1|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|select * from user|select * from user
+1688974300365|4|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|INSERT INTO user (name, password, profile, root, sex) VALUES (?, ?,?, ?, ?)|INSERT INTO user (name, password, profile, root, sex) VALUES ('Luna', '123','/root/luna.png', 1, 0)
+1688974329241|1|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|INSERT INTO user (name, password, profile, root, sex) VALUES (?, ?,?, ?, ?)|INSERT INTO user (name, password, profile, root, sex) VALUES ('Luna', '123','/root/luna.png', 1, 0)
+1688974381718|1|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|INSERT INTO user (name, password, profile, root, sex) VALUES (?, ?,?, ?, ?)|INSERT INTO user (name, password, profile, root, sex) VALUES ('Luna', '123','/root/luna.png', 1, 0)
+1688974446231|2|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|INSERT INTO user (name, password, profile, root, sex) VALUES (?, ?,?, ?, ?)|INSERT INTO user (name, password, profile, root, sex) VALUES ('Luna', '123','/root/luna.png', 1, 0)
+1688974601377|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user|SELECT * FROM user
+1688974630580|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user|SELECT * FROM user
+1688975205145|2|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|delete from user where id=?|delete from user where id=1
+1688976290941|3|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|UPDATE user SET name=?, password=?, profile=?, root=?, sex=? WHERE id=?|UPDATE user SET name='lain', password='456', profile='/root/lain.jpg', root=1, sex=0 WHERE id=2
+1688976881114|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user WHERE id=?|SELECT * FROM user WHERE id=2
+1688977520141|1|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user WHERE name=? and password=?|SELECT * FROM user WHERE name='luna' and password='123'
+1688977541638|1|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user|SELECT * FROM user
+1688977551297|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user WHERE name=? and password=?|SELECT * FROM user WHERE name='lain' and password='456'
+1689229623758|5|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|INSERT INTO people (first_name, last_name) VALUES (?, ?)|INSERT INTO people (first_name, last_name) VALUES ('john', 'doe')
+1689235858073|125|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM member|SELECT * FROM member
+1689236541308|3|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM member|SELECT * FROM member
+1689236656255|7|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM member|SELECT * FROM member
+1689237309637|5|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM member|SELECT * FROM member
+1689238232099|8|statement|connection 1|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM member|SELECT * FROM member
+1690180119936|8|statement|connection 1|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user WHERE name=? and password=?|SELECT * FROM user WHERE name='lain' and password='456'
+1690180184304|0|statement|connection 1|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user WHERE name=? and password=?|SELECT * FROM user WHERE name='lain' and password='123'
+1690191622617|6|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM user|SELECT * FROM user
+1690191637378|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM `blog`|SELECT * FROM `blog`
+1690192292161|13|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|INSERT INTO `blog`(`title`, `content`, `release_datetime`, `lastest_upload_datetime`, `author_id`) VALUES(?, ?, ?, ?, ?)|INSERT INTO `blog`(`title`, `content`, `release_datetime`, `lastest_upload_datetime`, `author_id`) VALUES('first blog', 'first', '2023-07-24T15:47:12.000+0800', '2023-07-24T15:47:12.000+0800', 1)
+1690192298717|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM `blog`|SELECT * FROM `blog`
+1690192306676|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM `blog` where `id`=?|SELECT * FROM `blog` where `id`=1
+1690192325336|3|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|INSERT INTO `blog`(`title`, `content`, `release_datetime`, `lastest_upload_datetime`, `author_id`) VALUES(?, ?, ?, ?, ?)|INSERT INTO `blog`(`title`, `content`, `release_datetime`, `lastest_upload_datetime`, `author_id`) VALUES('second blog', 'second', '2023-07-24T15:47:12.000+0800', '2023-07-24T15:47:12.000+0800', 1)
+1690192330461|2|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM `blog` where `id`=?|SELECT * FROM `blog` where `id`=1
+1690192336022|0|statement|connection 0|url jdbc:p6spy:sqlite::resource:db/springboot-vue-demo.db|SELECT * FROM `blog`|SELECT * FROM `blog`
